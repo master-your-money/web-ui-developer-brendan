@@ -1,4 +1,14 @@
 .home {
+  h1 {
+    font-size: 8rem;
+    @media @tablet{
+      font-size: 6rem;
+    }
+    @media @mobile {
+      font-size: 4rem;
+    }
+  }
+
 
   .content-section {
     margin: 30px 0;
@@ -33,6 +43,9 @@
     .text-content {
       padding-left: 4%;
       padding-right: 0;
+       a {
+         border: 2px solid red;
+       }
     }
 
     .img-content {
@@ -55,23 +68,10 @@
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-      .btn {
-        width: 85%;
-        background-color:@button-bg;
-        padding: 10px;
-        border-radius: 30px;
-        margin: 0 10px 0 0;
-        text-align:center;
-        color: white;
-        font-size: 2rem;
-      }
-    }
   }
 }// home
+
+
 
 
 
@@ -83,10 +83,11 @@ img {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  padding: 150px 0;
+  padding: 150px 10px;
 
   .text-content {
     width: 40%;
+    padding-right: 60px; 
     @media @mobile, @tablet {
     margin: 10px 100px;
     width: 80%;
@@ -98,7 +99,11 @@ img {
       display: none;
     }
   }
+
 }
+
+
+
 
 
 
@@ -137,6 +142,17 @@ img {
   justify-content: center;
   align-items: center;
   padding: 50px 0;
+}
 
 
+
+.btn {
+  width: 35%;
+  background-color:@button-bg;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 10px 0 0;
+  text-align:center;
+  color: white;
+  font-size: 2rem;
 }
