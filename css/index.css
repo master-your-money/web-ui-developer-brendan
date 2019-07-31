@@ -134,17 +134,18 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica", cursive;
 }
 h1 {
   font-size: 4rem;
+  font-style: bold;
 }
 h2 {
   font-size: 3.2rem;
@@ -164,18 +165,15 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-}
-.nav-bar {
-
 }
 .nav-bar .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 760px;
+  max-width: 1200px;
   margin: auto;
   padding: 15px 1%;
 }
@@ -210,8 +208,8 @@ img {
 }
 .footer {
   width: 100%;
-  padding: 100px  0;
-  background-color: #f1c40f;
+  background: #f1c40f;
+  padding: 100px 0;
 }
 .footer p {
   text-align: center;
@@ -238,10 +236,9 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-
 }
 .home .inverse-content .text-content {
-  padding-left: 1%;
+  padding-left: 4%;
   padding-right: 0;
 }
 .home .inverse-content .img-content {
@@ -257,7 +254,6 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -274,4 +270,50 @@ img {
   text-align: center;
   color: white;
   font-size: 2rem;
+}
+img {
+  max-width: 80%;
+}
+.jumbo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 0;
+}
+.jumbo .text-content {
+  width: 40%;
+}
+.jumbo .img {
+  width: 60%;
+}
+.main-content .content-section {
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+@media (max-width: 500px) {
+  .main-content .content-section {
+    flex-direction: column-reverse;
+  }
+  .main-content .content-section .img-content {
+    text-align: center;
+    width: 75%;
+    margin-bottom: 40px;
+  }
+}
+.main-content .content-section .text-content {
+  width: 35%;
+}
+@media (max-width: 500px) {
+  .main-content .content-section .text-content {
+    text-align: center;
+    width: 80%;
+  }
+}
+.inverse-content {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
 }
