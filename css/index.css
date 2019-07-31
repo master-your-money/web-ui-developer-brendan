@@ -157,7 +157,7 @@ h4 {
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 img {
   max-width: 100%;
@@ -208,10 +208,12 @@ a {
   width: 90px;
   text-align: center;
 }
+.nav-bar .nav-container nav a:hover {
+  color: #f1c40f;
+}
 .footer {
   width: 100%;
-  background: #f1c40f;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .footer .ftr {
   width: 60%;
@@ -222,6 +224,11 @@ a {
   text-align: center;
   width: 30%;
   margin: auto;
+}
+@media (max-width: 500px), (max-width: 750px) {
+  .footer .section-one {
+    width: 100%;
+  }
 }
 .footer .section-one p {
   color: #535353;
@@ -357,16 +364,53 @@ img {
   border-radius: 15px;
   margin: 0 10px 0 0;
   text-align: center;
-  color: white;
   font-size: 2rem;
+}
+.btn a {
+  color: white;
 }
 .jumbo .text-content .signup {
   display: flex;
   padding: 10px 0;
 }
 .jumbo .text-content .signup a {
-  padding: 2px 0 0 0;
+  padding: 13px 0 0 0;
   font-size: 1.5rem;
   color: #38D39F;
   text-decoration: underline;
+}
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+.section-form {
+  padding: 30px 0;
+}
+.section-form h1,
+.section-form h2 {
+  text-align: center;
+}
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #535353;
+}
+textarea {
+  height: 100px;
+}
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+*:focus {
+  outline: none;
+}
+.row .btn {
+  margin: auto;
 }
