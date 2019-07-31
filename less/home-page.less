@@ -76,7 +76,7 @@
 
 
 img {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .jumbo{
@@ -87,9 +87,16 @@ img {
 
   .text-content {
     width: 40%;
+    @media @mobile, @tablet {
+    margin: 10px 100px;
+    width: 80%;
+    }
   }
   .img {
-    width: 60%;
+    width: 55%;
+   @media @mobile, @tablet {
+      display: none;
+    }
   }
 }
 
@@ -103,7 +110,7 @@ img {
   align-items: center;
   padding: 50px;
 
-  @media @mobile {
+  @media @mobile, @tablet {
     flex-direction: column-reverse;
 
     .img-content {
@@ -117,7 +124,7 @@ img {
     width: 35%;
     
 
-    @media @mobile {
+    @media @mobile, @tablet {
       text-align: center;
       width: 80%;
     }
