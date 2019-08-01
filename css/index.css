@@ -414,3 +414,10 @@ input[type=checkbox] {
 .row .btn {
   margin: auto;
 }
+.fourOhFourDiv {
+  display: flex;
+}
+.fourOhFour {
+  padding: 100px 0;
+  margin: auto;
+}
